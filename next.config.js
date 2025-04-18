@@ -8,6 +8,9 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  images: {
+    unoptimized: true, // Keeps image optimization disabled
+  },
   experimental: {
     fontLoaders: [
       {
@@ -18,7 +21,11 @@ const nextConfig = {
       },
     ],
   },
-  assetPrefix: '/', // ✅ Use leading slash
+  // GitHub Pages-specific configurations
+  basePath: process.env.NODE_ENV === 'production' ? '/kere-albert-portfolio' : '', // Change 'your-repo-name' to your repo's name
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/kere-albert-portfolio/' : '', // Same for assetPrefix
+  trailingSlash: true, // Ensure URLs end with a trailing slash (e.g., /about/)
 };
 
 module.exports = nextConfig;
+
