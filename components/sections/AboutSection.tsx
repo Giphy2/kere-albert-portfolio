@@ -63,7 +63,7 @@ export function AboutSection() {
           <div className="order-1 lg:order-2 flex justify-center">
             <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-indigo-600/20">
               <Image 
-                src="https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="https://dfemzhvpiacvayqyuwiz.supabase.co/storage/v1/object/public/drugs/logos/kereAlbert.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="Kere Albert"
                 fill
                 style={{ objectFit: 'cover' }}
