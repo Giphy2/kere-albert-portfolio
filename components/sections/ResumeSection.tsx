@@ -7,13 +7,14 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Badge } from '@/components/ui/badge'
 import { Download, FileText, Building, GraduationCap, DivideIcon as LucideIcon, Award, Calendar } from 'lucide-react'
 import { education, experience, certifications } from '@/lib/resume-data'
+import type { LucideIcon as LucideIconType } from 'lucide-react';
 
 interface TimelineItemProps {
   title: string
   organization: string
   period: string
   description: string[]
-  icon: LucideIcon
+  icon: LucideIconType // ✅ Correct type usage
   skills?: string[]
 }
 
