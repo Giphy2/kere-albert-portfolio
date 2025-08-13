@@ -43,5 +43,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
-          local-dir: ./out  # same folder used for GitHub Pages deploy
+          local-dir: ./out/  # same folder used for GitHub Pages deploy
           server-dir: /htdocs/
